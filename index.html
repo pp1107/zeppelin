@@ -5,14 +5,828 @@
 	<title>Zeppelin</title>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<link rel="shortcut icon" href="favicon.png" />
 	<link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="libs/owl/owl.carousel.css" />
+	<link rel="stylesheet" href="libs/animate/animate.min.css" />
 	<link rel="stylesheet" href="css/fonts.css" />
 	<link rel="stylesheet" href="css/main.css" />
 	<link rel="stylesheet" href="css/media.css" />
+	<script src="http://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+	<script>
+		ymaps.ready(init);
+
+		function init(){     
+
+			var myMap;
+
+			myMap = new ymaps.Map("map", {
+				center: [56.08435951936419,58.6284021873417],
+				zoom: 5,
+				controls: []
+			});
+
+			myMap.behaviors.disable('scrollZoom');
+
+			myMap.controls.add("zoomControl", {
+				position: {top: 15, left: 15}
+			});
+			var myPlacemark = new ymaps.Placemark([54.238361021006554,45.13674143750001], {},
+				{ iconLayout: 'default#image',
+				iconImageHref: 'img/marker.png',
+				iconImageSize: [27, 38] });    
+			myMap.geoObjects.add(myPlacemark); 
+			var myPlacemark = new ymaps.Placemark([56.587508924541716,47.9492414375], {},
+				{ iconLayout: 'default#image',
+				iconImageHref: 'img/marker.png',
+				iconImageSize: [27, 38] });    
+			myMap.geoObjects.add(myPlacemark); 
+			var myPlacemark = new ymaps.Placemark([53.24849596575816,50.05861643750002], {},
+				{ iconLayout: 'default#image',
+				iconImageHref: 'img/marker.png',
+				iconImageSize: [27, 38] });    
+			myMap.geoObjects.add(myPlacemark); 
+			var myPlacemark = new ymaps.Placemark([51.58276886122173,46.147483625000014], {},
+				{ iconLayout: 'default#image',
+				iconImageHref: 'img/marker.png',
+				iconImageSize: [27, 38] });    
+			myMap.geoObjects.add(myPlacemark); 
+			var myPlacemark = new ymaps.Placemark([54.77538113788186,55.99123362500001], {},
+				{ iconLayout: 'default#image',
+				iconImageHref: 'img/marker.png',
+				iconImageSize: [27, 38] });    
+			myMap.geoObjects.add(myPlacemark); 
+
+			var myPlacemark = new ymaps.Placemark([51.774008490864254,55.02443675000001], {},
+				{ iconLayout: 'default#image',
+				iconImageHref: 'img/marker.png',
+				iconImageSize: [27, 38] });    
+			myMap.geoObjects.add(myPlacemark); 
+			var myPlacemark = new ymaps.Placemark([56.853298718632885,60.56154612500003], {},
+				{ iconLayout: 'default#image',
+				iconImageHref: 'img/marker.png',
+				iconImageSize: [27, 38] });    
+			myMap.geoObjects.add(myPlacemark); 
+			var myPlacemark = new ymaps.Placemark([51.66482810974051,39.07228831250001], {},
+				{ iconLayout: 'default#image',
+				iconImageHref: 'img/marker.png',
+				iconImageSize: [27, 38] });    
+			myMap.geoObjects.add(myPlacemark); 
+			var myPlacemark = new ymaps.Placemark([55.75399399999374,37.62209300000001], {},
+				{ iconLayout: 'default#image',
+				iconImageHref: 'img/marker.png',
+				iconImageSize: [27, 38] });    
+			myMap.geoObjects.add(myPlacemark); 
+			var myPlacemark = new ymaps.Placemark([58.58267654585965,49.570856499999984], {},
+				{ iconLayout: 'default#image',
+				iconImageHref: 'img/marker.png',
+				iconImageSize: [27, 38] }); 
+			myMap.geoObjects.add(myPlacemark);
+			var myPlacemark = new ymaps.Placemark([58.02283310604378,56.2294204999999], {},
+				{ iconLayout: 'default#image',
+				iconImageHref: 'img/marker.png',
+				iconImageSize: [27, 38] }); 
+			myMap.geoObjects.add(myPlacemark);
+		}
+	</script>
+	<script src='https://www.google.com/recaptcha/api.js'></script>
 </head>
 <body>
 	
+	<header>
+		<div class="block__top">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-3 col-sm-3 col-xs-6">
+						<a href="#" class="block__top__logo"><img src="img/logo.png" alt="Zeppelin. We create solutions"></a>
+						<div class="clearfix"></div>
+					</div>
+					<div class="col-md-9 col-sm-9 col-xs-6">
+						<nav>
+							<a href="#block6" class="mobile__cart block__top__cart page-scroll"><span>0</span></a><span class="mobile-btn"></span>
+							<ul class="hidden-xs">
+								<li><a href="#block1" class="page-scroll">Решение</a></li>
+								<li><a href="#block2" class="page-scroll">Схема работы</a></li>
+								<li><a href="#block3" class="page-scroll">Услуги и цены</a></li>
+								<li><a href="#block4" class="page-scroll">Доставка</a></li>
+								<li><a href="#block5" class="page-scroll">Контакты</a></li>
+								<li><a href="#block6" class="block__top__cart page-scroll"><span>0</span></a></li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</div>
+		<ul class="mobile-nav hidden-sm hidden-md hidden-lg">
+			<li>Меню</li>
+			<li><a href="#block1" class="page-scroll">Решение</a></li>
+			<li><a href="#block2" class="page-scroll">Схема работы</a></li>
+			<li><a href="#block3" class="page-scroll">Услуги и цены</a></li>
+			<li><a href="#block4" class="page-scroll">Доставка</a></li>
+			<li><a href="#block5" class="page-scroll">Контакты</a></li>
+		</ul>
+		<div class="block__main">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<h1>Центр по мониторингу <br> оборудования</h1>
+						<h2>В процессе эксплуатации любой техники происходит постепенное изнашивание ее узлов и компонентов. <span></span> Важно заранее предвидеть возникающие при этом проблемы и с помощью превентивных действий не допустить выход из строя всей машины либо одного из агрегатов, а также потерю рабочего времени и затраты на дорогостоящий ремонт.</h2>
+						<div class="img-absolute"><img src="img/main-img.jpg" alt="ALT"></div>
+						<a href="#block1" class="block__main__btn page-scroll">У нас есть решение</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<div class="block1" id="block1">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="h1">У нас есть решение!</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-5 col-md-push-7 col-sm-5 col-sm-push-7">
+					<div class="block1-img">
+						<img src="img/block1-1.jpg" alt="У нас есть решение!" class="img-responsive">
+					</div>
+				</div>
+				<div class="col-md-7 col-md-pull-5 col-sm-7 col-sm-pull-5">
+					<p>Отбор проб эксплуатационных жидкостей через равные интервалы <br> времени с их последующим анализом, что помогает заранее выявить <br> потенциальные проблемы, тем самым снижая риски, связанные с <br> поломкой и простоем техники, и уменьшая расходы на ремонт.</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<div class="block1__step">
+						<ul>
+							<li><img src="img/block1-img-1.png" alt="Отбор проб"><span>Отбор <br> проб</span></li>
+							<li><img src="img/block1-img-2.png" alt="Экспертиза масел"><span>Экспертиза <br> масел</span></li>
+							<li><img src="img/block1-img-3.png" alt="Отчет (анализ отклонений)"><span>Отчет (анализ <br> отклонений)</span></li>
+							<li><img src="img/block1-img-4.png" alt="Устранение неполадок"><span>Устранение <br> неполадок</span></li>
+							<li><img src="img/block1-img-5.png" alt="Снижение расхадов"><span>Снижение <br> расхадов</span></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="block2">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="h2">В стоимость анализа входит предоставление рекомендаций от инженера по мониторингу оборудования:</div>
+					<ul>
+						<li><img src="img/block2-img-1.png" alt="Контроль уровня износа деталей и узлов техники">Контроль уровня <br> износа деталей и узлов <br> техники</li>
+						<li><img src="img/block2-img-2.png" alt="Установление причин и последствий износа элементов">Установление причин и <br> последствий износа <br> элементов</li>
+						<li><img src="img/block2-img-3.png" alt="Сроки замены масел">Сроки замены масел</li>
+						<li><img src="img/block2-img-4.png" alt="Степень загрязнения">Степень загрязнения</li>
+						<li><img src="img/block2-img-5.png" alt="Диагностика дефекта на ранней стадии развития">Диагностика дефекта <br>на ранней стадии <br> развития</li>
+					</ul>
+					<a href="#" onclick="return false" class="btn-basic">Аккредитация ISO 17025</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="block3">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-8">
+					<p>Центр по мониторингу оборудования <strong>Zeppelin</strong>, оснащенный <br> современным оборудованием, имеющий большой опыт по мониторингу <br> техники и аккредитованный для данных работ по стандарту <strong>ISO 17025</strong>, <br> может предоставить вам профессиональные услуги по анализу <br> горюче-смазочных и эксплуатационных жидкостей.</p>
+				</div>
+				<div class="col-md-4">
+					<a href="#" target="_blank" class="block3__download"><strong>Скачать</strong><span>«Аттестат аккредитации»</span></a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="block4" id="block2">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="title">Схема работы</div>
+
+					<ul>
+						<li>Оставляете заявку.</li>
+						<li>Получаете счет и инструкции с <br> правилами отбора и оформления проб.</li>
+						<li>Оплачиваете счет.</li>
+						<li>Отправляете пробы напрямую или <br> через филиал Цеппелин.</li>
+						<li>Получаете результаты анализа <br> на вашу электронную почту.</li>
+					</ul>
+
+					<a href="#" onclick="return false" class="block4__btn">Принципы правильного отбора пробы</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="block5">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="title">
+						С нашей помощью незапланированные простои станут частью прошлого, даже при увеличении интервала замены масла. А значит, резко <strong>сократятся затраты на обслуживание вашей техники.</strong>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-5 col-md-push-7">
+					<iframe height="218" src="https://www.youtube.com/embed/Mzjb2flahn4?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+					<iframe height="218" src="https://www.youtube.com/embed/eGjBBXK9KwY?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+					<div class="clearfix"></div>
+				</div>
+				<div class="col-md-7 col-md-pull-5">
+					<ul>
+						<li>Для каждой точки отбор пробы должен быть унифицирован.</li>
+						<li>Отбирайте пробу одинаковым способом и в одно и то же время.</li>
+						<li>Например, если предыдущая проба была отобрана после того, <br> как машина проработала полчаса, то и для отбора <br> последующих проб дайте машине поработать полчаса.</li>
+						<li>Рекомендуется отбор проб из работающей техники или в <br> течение 10 минут после ее остановки.</li>
+						<li>Нельзя отбирать пробу сразу же после добавления большого <br>количества свежего масла.</li>
+						<li>Старайтесь отобрать максимально допустимое количество</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="block6" id="block3">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="h1">Услуги</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-md-12">
+					<table>
+						<thead>
+							<tr>
+								<th>Анализ масла</th>
+								<th>Стандартный анализ масла</th>
+								<th>Расширенный анализ антифриза</th>
+							</tr>
+						</thead>
+						<tbody>
+
+							<tr>
+								<td><span class="named">Элементарный анализ</span><span class="named-descr">ASTM D5185</span></td>
+								<td><img src="img/yes.png" alt="ALT"></td>
+								<td><img src="img/yes-white.png" alt="ALT"></td>
+							</tr>
+							<tr>
+								<td><span class="named">ИК-спектроскопия</span><span class="named-descr">ASTM E2412</span></td>
+								<td><img src="img/yes.png" alt="ALT"></td>
+								<td><img src="img/yes-white.png" alt="ALT"></td>
+							</tr>
+							<tr>
+								<td><span class="named">Вязкость кинематическая</span><span class="named-descr">ASTM D445</span></td>
+								<td><img src="img/yes.png" alt="ALT"></td>
+								<td><img src="img/yes-white.png" alt="ALT"></td>
+							</tr>
+							<tr>
+								<td><span class="named">Индекс вязкости</span><span class="named-descr">ASTM D2270</span></td>
+								<td><img src="img/yes.png" alt="ALT"></td>
+								<td><img src="img/yes-white.png" alt="ALT"></td>
+							</tr>
+							<tr>
+								<td><span class="named">Содержание воды по методу Карла-Фишера</span><span class="named-descr">ASTM D1744</span></td>
+								<td><img src="img/no.png" alt="ALT"></td>
+								<td><img src="img/yes-white.png" alt="ALT"></td>
+							</tr>
+							<tr>
+								<td><span class="named">Количество частиц, ISO</span><span class="named-descr">ISO 4406</span></td>
+								<td><img src="img/yes.png" alt="ALT"><br>(для гидравлик и трасмисий)</td>
+								<td><img src="img/yes-white.png" alt="ALT"><br>(для гидравлик и трасмисий)</td>
+							</tr>
+							<tr>
+								<td><span class="named">Щелочное число</span><span class="named-descr">ASTM D4739</span></td>
+								<td><img src="img/no.png" alt="ALT"></td>
+								<td><img src="img/yes-white.png" alt="ALT"></td>
+							</tr>
+							<tr>
+								<td><span class="named">Кислотное число</span><span class="named-descr">ASTM D664</span></td>
+								<td><img src="img/no.png" alt="ALT"></td>
+								<td><img src="img/yes-white.png" alt="ALT"></td>
+							</tr>
+							<tr>
+								<td><span class="named">Содержание топлива методом газовой хроматографии</span><span class="named-descr">ASTM D3524</span></td>
+								<td><img src="img/yes.png" alt="ALT"><br>(для гидравлик и трасмисий)</td>
+								<td><img src="img/yes-white.png" alt="ALT"><br>(для гидравлик и трасмисий)</td>
+							</tr>
+							<tr>
+								<td><span class="named">Интерпретация результатов</span><span class="named-descr"></span></td>
+								<td><img src="img/yes.png" alt="ALT"></td>
+								<td><img src="img/yes-white.png" alt="ALT"></td>
+							</tr>
+
+							<tr>
+								<td></td>
+								<td class="sravnivanie">сравнение</td>
+								<td class="sravnivanie sravnivanie2">сравнение</td>
+							</tr>
+							<tr class="options">
+								<td class="border-bottom border-none">Цена</td>
+								<td class="price">1 500 &#x20bd;</td>
+								<td class="price price-white">3 350 &#x20bd;</td>
+							</tr>
+							<tr class="options">
+								<td class="border-bottom border-none">Количество</td>
+								<td>
+									<div class="owl-item-count">
+										<input type="number" class="mod" min="1" value="1">
+									</div>
+								</td>
+								<td>
+									<div class="owl-item-count">
+										<input type="number" class="mod" min="1" value="1">
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td class="border-none"></td>
+								<td><a href="#" class="block6__add">Добавить</a></td>
+								<td><a href="#" class="block6__add block6__add2">Добавить</a></td>
+							</tr>
+						</tbody>
+					</table>
+					<div class="clearfix"></div>
+					<table>
+						<thead>
+							<tr>
+								<th>Анализ масла</th>
+								<th>Стандартный анализ масла</th>
+								<th>Расширенный анализ антифриза</th>
+							</tr>
+						</thead>
+						<tbody>
+
+							<tr>
+								<td><span class="named">Содержание гликоля</span><span class="named-descr"></span></td>
+								<td><img src="img/yes.png" alt="ALT"></td>
+								<td><img src="img/yes-white.png" alt="ALT"></td>
+							</tr>
+							<tr>
+								<td><span class="named">Температура кипения</span><span class="named-descr">ASTM E2412</span></td>
+								<td><img src="img/yes.png" alt="ALT"></td>
+								<td><img src="img/yes-white.png" alt="ALT"></td>
+							</tr>
+							<tr>
+								<td><span class="named">Температура замерзания</span><span class="named-descr">ASTM D445</span></td>
+								<td><img src="img/yes.png" alt="ALT"></td>
+								<td><img src="img/yes-white.png" alt="ALT"></td>
+							</tr>
+							<tr>
+								<td><span class="named">Содержание ингибиторов (нитрит)</span><span class="named-descr">ASTM D2270</span></td>
+								<td><img src="img/yes.png" alt="ALT"></td>
+								<td><img src="img/yes-white.png" alt="ALT"></td>
+							</tr>
+							<tr>
+								<td><span class="named">Содержание ионов</span><span class="named-descr">ASTM D1744</span></td>
+								<td><img src="img/no.png" alt="ALT"></td>
+								<td><img src="img/yes-white.png" alt="ALT"></td>
+							</tr>
+							<tr>
+								<td><span class="named">Визуальный осмотр (цвет, прозрачность,  пенообразование, анализ</span><span class="named-descr"></span></td>
+								<td><img src="img/yes.png" alt="ALT"></td>
+								<td><img src="img/yes-white.png" alt="ALT"></td>
+							</tr>
+							<tr>
+								<td><span class="named">Содержание силикатов, боратов, 
+									молибдатов, фосфатов, нитратов, 
+									себацинатов, гликолятов, 
+									хлоридов, формиатов, сульфатов, 
+									общей жесткости </span><span class="named-descr">ASTM D5827</span></td>
+									<td><img src="img/no.png" alt="ALT"></td>
+									<td><img src="img/yes-white.png" alt="ALT"></td>
+								</tr>
+								<tr>
+									<td><span class="named">Определение pH</span><span class="named-descr">ASTM D664</span></td>
+									<td><img src="img/no.png" alt="ALT"></td>
+									<td><img src="img/yes-white.png" alt="ALT"></td>
+								</tr>
+								<tr>
+									<td><span class="named">Содержание меди, железа, хрома, 
+										алюминия, натрия, магния, цинка, 
+										олова, кальция, калия, 
+										общей жесткости</span><span class="named-descr">ASTM D6130</span></td>
+										<td><img src="img/yes.png" alt="ALT"></td>
+										<td><img src="img/yes-white.png" alt="ALT"></td>
+									</tr>
+									<tr>
+										<td><span class="named">Интерпретация результатов</span><span class="named-descr"></span></td>
+										<td><img src="img/yes.png" alt="ALT"></td>
+										<td><img src="img/yes-white.png" alt="ALT"></td>
+									</tr>
+
+									<tr>
+										<td></td>
+										<td class="sravnivanie">сравнение</td>
+										<td class="sravnivanie sravnivanie2">сравнение</td>
+									</tr>
+									<tr class="options">
+										<td class="border-bottom border-none">Цена</td>
+										<td class="price">935 &#x20bd;</td>
+										<td class="price price-white">8 850 &#x20bd;</td>
+									</tr>
+									<tr class="options">
+										<td class="border-bottom border-none">Количество</td>
+										<td>
+											<div class="owl-item-count">
+												<input type="number" class="mod" min="1" value="1">
+											</div>
+										</td>
+										<td>
+											<div class="owl-item-count">
+												<input type="number" class="mod" min="1" value="1">
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<td class="border-none"></td>
+										<td><a href="#" class="block6__add">Добавить</a></td>
+										<td><a href="#" class="block6__add block6__add2">Добавить</a></td>
+									</tr>
+								</tbody>
+							</table>
+							<div class="clearfix"></div>
+							<a href="#" onclick="return false" class="btn__block6">Продукция для взятия проб</a>
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+			<div class="block7">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12">
+							<div class="owl-carousel">
+
+								<div class="owl-items">
+									<img src="img/owl-item-1.jpg" alt="Вакуумный насос для пробоотбора" class="img-responsive">
+									<div class="owl-item-title">Вакуумный насос для пробоотбора</div>
+									<div class="owl-item-price">3 000 &#x20bd;</div>
+									<div class="owl-item-count">
+										<input type="number" class="mod" min="1" value="1">
+									</div>
+									<a href="#" class="owl-item-btn">Добавить</a>
+								</div>
+
+								<div class="owl-items">
+									<img src="img/owl-item-2.jpg" alt="Пластиковая бутыль для проб 4 унции" class="img-responsive">
+									<div class="owl-item-title">Трубка для пробоотбора (d 6,35 мм), 1 бухта (100 футов)</div>
+									<div class="owl-item-price">500 &#x20bd;</div>
+									<div class="owl-item-count">
+										<input type="number" class="mod" min="1" value="1">
+									</div>
+									<a href="#" class="owl-item-btn">Добавить</a>
+								</div>
+
+								<div class="owl-items">
+									<img src="img/owl-item-3.jpg" alt="Набор для отбора проб через клапан" class="img-responsive">
+									<div class="owl-item-title">Пластиковая бутыль для проб 4 унции</div>
+									<div class="owl-item-price">50 &#x20bd;</div>
+									<div class="owl-item-count">
+										<input type="number" class="mod" min="1" value="1">
+									</div>
+									<a href="#" class="owl-item-btn">Добавить</a>
+								</div>
+
+								<div class="owl-items">
+									<img src="img/owl-item-4.jpg" alt="Набор для отбора проб через клапан" class="img-responsive">
+									<div class="owl-item-title">Набор для отбора проб через клапан</div>
+									<div class="owl-item-price">170 &#x20bd;</div>
+									<div class="owl-item-count">
+										<input type="number" class="mod" min="1" value="1">
+									</div>
+									<a href="#" class="owl-item-btn">Добавить</a>
+								</div>
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="block8" id="block4">
+				<div class="container">
+
+					<div class="row">
+						<div class="col-md-12">
+							<div class="h1 white">Доставка</div>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-md-6">
+							<div class="block8__item">
+								<div class="block8__item__title">Доставка товаров</div>
+								<p>Оплата доставки товара за счет клиента 
+									транспортными компаниями.</p>
+									<p>Возможен бесплатный самовывоз из <br>
+										филиалов Цеппелин.</p>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="block8__item">
+										<div class="block8__item__title">ДОСТАВКА ПРОБ</div>
+										<p>Доставка проб в Центр мониторинга 
+											осуществляется силами клиента.</p>
+											<p>Возможен вариант доставки до <br>
+												ближайшего к Вам филиала Цеппелин.</p>
+											</div>
+										</div>
+									</div>
+
+									<div class="row">
+										<div class="col-md-12">
+											<div class="block8__item block8__item3">
+												<span>141402, Московская область, г. Химки, Коммунальный проезд, влад. 30</span>
+												<p>или до ближайшего к Вам филиала Цеппелин</p>
+											</div>
+											<span class="delivery">* доставка не включена в стоимость товаров</span>
+										</div>
+									</div>
+
+								</div>
+							</div>
+							<div id="map">
+								<div class="container">
+									<div class="row">
+										<div class="col-md-12">
+											<a href="#" onclick="return false" class="btn__map">Показать список филиалов</a>
+											<div class="clearfix"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="block9">
+								<div class="container">
+									<div class="row">
+										<div class="col-md-12">
+											<div class="block9__table">
+												<table>
+													<thead>
+														<tr>
+															<th rowspan="2">Список филиалов</th>
+															<th></th>
+														</tr>
+													</thead>
+													<tbody>
+														<tr>
+															<td>Центральный офис, Москва</td>
+															<td>143441, Московская область, Красногорский район, почтовое отделение 
+																Путилково, ул. 69 км МКАД, ООК ЗАО ГРИНВУД, строение 31.</td>
+															</tr>
+															<tr>
+																<td>Логистический центр, Лобня</td>
+																<td>141730, Московская обл., г. Лобня, ул. Индустриальная, д. 1</td>
+															</tr>
+															<tr>
+																<td>Химки</td>
+																<td>141402, Московская обл., г. Химки, Коммунальный проезд, влад. 30</td>
+															</tr>
+															<tr>
+																<td>Центральный офис, Москва</td>
+																<td>143441, Московская область, Красногорский район, почтовое отделение 
+																	Путилково, ул. 69 км МКАД, ООК ЗАО ГРИНВУД, строение 31.</td>
+																</tr>
+																<tr>
+																	<td>Логистический центр, Лобня</td>
+																	<td>141730, Московская обл., г. Лобня, ул. Индустриальная, д. 1</td>
+																</tr>
+																<tr>
+																	<td>Химки</td>
+																	<td>141402, Московская обл., г. Химки, Коммунальный проезд, влад. 30</td>
+																</tr>
+																<tr>
+																	<td>Центральный офис, Москва</td>
+																	<td>143441, Московская область, Красногорский район, почтовое отделение 
+																		Путилково, ул. 69 км МКАД, ООК ЗАО ГРИНВУД, строение 31.</td>
+																	</tr>
+																	<tr>
+																		<td>Логистический центр, Лобня</td>
+																		<td>141730, Московская обл., г. Лобня, ул. Индустриальная, д. 1</td>
+																	</tr>
+																	<tr>
+																		<td>Химки</td>
+																		<td>141402, Московская обл., г. Химки, Коммунальный проезд, влад. 30</td>
+																	</tr>
+																	<tr>
+																		<td>Центральный офис, Москва</td>
+																		<td>143441, Московская область, Красногорский район, почтовое отделение 
+																			Путилково, ул. 69 км МКАД, ООК ЗАО ГРИНВУД, строение 31.</td>
+																		</tr>
+																		<tr>
+																			<td>Логистический центр, Лобня</td>
+																			<td>141730, Московская обл., г. Лобня, ул. Индустриальная, д. 1</td>
+																		</tr>
+																	</tbody>
+																</table>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+
+											<div class="block10">
+												<div class="container">
+													<div class="row">
+														<div class="col-md-12">
+															<a href="#" onclick="return false" class="block10__btn">Предоставление результатов анализа</a>
+														</div>
+													</div>
+												</div>
+											</div>
+
+											<div class="block3 block11">
+												<div class="container">
+													<div class="row">
+														<div class="col-md-8">
+															<p>Результаты анализа высылаются <strong>в формате PDF</strong> на указанный Вами электронный адрес  (среднее время обработки до 2-х рабочих дней).</p>
+														</div>
+														<div class="col-md-4">
+															<a href="#" class="block3__download"><strong>Скачать</strong><span>«Пример результата анализа»</span></a>
+														</div>
+													</div>
+												</div>
+											</div>
+
+											<div class="block12">
+												<div class="container">
+													<div class="row">
+														<div class="col-md-12">
+															<div class="h1">Наши партнеры</div>
+														</div>
+													</div>
+													<div class="row">
+														<div class="col-md-12">
+															<div class="owl-carousel-partners">
+
+																<div class="block12__item">
+																	<img src="img/block12-img-1.jpg" alt="ALT">
+																	<strong>Имя партнера</strong>
+																	<span>Подробности о партнере подробности о партнере</span>
+																</div>
+
+																<div class="block12__item">
+																	<img src="img/block12-img-1.jpg" alt="ALT">
+																	<strong>Имя партнера</strong>
+																	<span>Подробности о партнере подробности о партнере</span>
+																</div>
+
+																<div class="block12__item">
+																	<img src="img/block12-img-1.jpg" alt="ALT">
+																	<strong>Имя партнера</strong>
+																	<span>Подробности о партнере подробности о партнере</span>
+																</div>
+
+																<div class="block12__item">
+																	<img src="img/block12-img-1.jpg" alt="ALT">
+																	<strong>Имя партнера</strong>
+																	<span>Подробности о партнере подробности о партнере</span>
+																</div>
+
+															</div>
+														</div>
+													</div>
+
+													<div class="row">
+														<div class="col-md-12">
+															<a href="#" onclick="return false" class="block12__btn">Контакты</a>
+														</div>
+													</div>
+
+												</div>
+											</div>
+
+											<div class="block13" id="block5">
+												<div class="container">
+													<div class="row">
+														<div class="col-md-12">
+															<div class="title">Хотите стать нашим партнером – свяжитесь с нами!</div>
+														</div>
+													</div>
+													<div class="row">
+														<div class="col-md-5">
+															<div class="block13__img">
+																<img src="img/block13-img.jpg" alt="ALT" class="img-responsive">
+															</div>
+														</div>
+														<div class="col-md-7">
+															<ul>
+																<li><a href="tel:0(000)000-00-00">0 (000) 000-00-00</a></li>
+																<li><a href="mailto:123@123.com">123@123.com</a></li>
+																<li>141402, Московская обл., г. Химки, Коммунальный проезд, 30</li>
+															</ul>
+															<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+														</div>
+													</div>
+												</div>
+											</div>
+
+											<div class="block14" id="block6">
+												<div class="container">
+
+													<div class="row">
+														<div class="col-md-12">
+															<div class="h1">Корзина</div>
+														</div>
+													</div>
+
+													<div class="row">
+														<div class="col-md-12">
+															<div class="block14__cart">
+																<table>
+																	<thead>
+																		<tr>
+																			<th>Наименование</th>
+																			<th>Цена</th>
+																			<th>Количество</th>
+																			<th>Стоимость</th>
+																			<th></th>
+																		</tr>
+																	</thead>
+																	<tbody>
+																		<tr>
+																			<td>Cell 1</td>
+																			<td>1 500 &#x20bd;</td>
+																			<td>
+																				<div class="owl-item-count">
+																					<input type="number" class="mod" min="1" value="1">
+																				</div>
+																			</td>
+																			<td>1 500 &#x20bd;</td>
+																			<td><span class="remove"></span></td>
+																		</tr>
+																		<tr>
+																			<td>Cell 4</td>
+																			<td>500 &#x20bd;</td>
+																			<td>
+																				<div class="owl-item-count">
+																					<input type="number" class="mod" min="1" value="1">
+																				</div>
+																			</td>
+																			<td>2 500 &#x20bd;</td>
+																			<td><span class="remove"></span></td>
+																		</tr>
+																		<tr>
+																			<td>Cell 7689697969 <br>
+																				66667786</td>
+																				<td>50 &#x20bd;</td>
+																				<td>
+																					<div class="owl-item-count">
+																						<input type="number" class="mod" min="1" value="1">
+																					</div>
+																				</td>
+																				<td>1 100 &#x20bd;</td>
+																				<td><span class="remove"></span></td>
+																			</tr>
+																		</tbody>
+																	</table>
+																	<ul>
+																		<li>Итого:</li>
+																		<li>4 600 &#x20bd;</li>
+																		<li><a href="#" class="btn-pereraschet">Перерасчет</a></li>
+																	</ul>
+																</div>
+																<div class="block14__form">
+																	<div class="col-sm-5">
+																		<label>
+																			Ф.И.О.*
+																			<input type="text" name="name">
+																		</label>
+																		<label>
+																			Контактный телефон*
+																			<input type="text" required>
+																		</label>
+																		<label>
+																			E-mail*
+																			<input type="text" required>
+																		</label>
+																		<div class="g-recaptcha" data-sitekey="6Ld-vRcUAAAAAPpb0JaJQoxK3RaUcJBIvz_slXzC"></div>
+																	</div>
+																	<div class="col-sm-7 padding-left">
+																		<label>
+																			Комментарий
+																			<textarea name="comments"></textarea>
+																		</label>
+																		<button>Заказать</button>
+																	</div>
+																	<div class="clearfix"></div>
+																	<p>Нажимая кнопку <strong>«Заказать»</strong> Вы отправляете свой заказ на обработку специалисту, который свяжется с Вами в ближайшее время для уточнения заказа.</p>
+																</div>
+															</div>
+														</div>
+
+
+													</div>
+												</div>
+
 	<!--[if lt IE 9]>
 	<script src="libs/html5shiv/es5-shim.min.js"></script>
 	<script src="libs/html5shiv/html5shiv.min.js"></script>
@@ -22,6 +836,10 @@
 	
 	<script src="libs/jquery/jquery-2.1.3.min.js"></script>
 	<script src="libs/bootstrap/js/bootstrap.min.js"></script>
+	<script src="libs/animate/animate-css.js"></script>
+	<script src="libs/waypoints/waypoints.min.js"></script>
+	<script src="libs/owl/owl.carousel.min.js"></script>
+	<script src="libs/scroll2id/PageScroll2id.min.js"></script>
 	<script src="js/common.js"></script>
 	<!-- Yandex.Metrika counter --><!-- /Yandex.Metrika counter -->
 	<!-- Google Analytics counter --><!-- /Google Analytics counter -->
