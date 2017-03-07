@@ -99,6 +99,10 @@ a:hover, a:active, a:focus, input:hover, input:active, input:focus, button:hover
   display: none;
 }
 
+.block__top__cart .active {
+  display: block !important;
+}
+
 h1 {
   color: #fff;
   font-family: "RobotoMedium";
