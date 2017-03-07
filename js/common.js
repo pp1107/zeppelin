@@ -79,7 +79,11 @@ $(document).ready(function() {
 			}
 		}
 	});
-
+$(function() {
+    setTimeout(function() {
+        $(".block7").hide()
+    }, 500);
+});
 	var screen = $(window)
 		if (screen.width() > 767) {
 setInterval("$('.block1__step ul li:nth-child(1)').show().addClass('animated pulse')", 100);
