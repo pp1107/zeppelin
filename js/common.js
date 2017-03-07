@@ -1,4 +1,7 @@
 $(document).ready(function() {
+	$('.toggle-td').click(function(){
+		$(this).parent().parent().parent().toggleClass('active-table');
+	});
 	$('.block2 .btn-basic').click(function(){
 		$('.block3').toggle("slow");
 	});

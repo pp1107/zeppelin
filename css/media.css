@@ -102,6 +102,9 @@
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
+	.block6 table thead th{
+		line-height: 21px;
+	}
 	.block__top nav ul li{
 		margin: 0 15px 0 0;
 	}
@@ -205,6 +208,21 @@
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 767px) {
+	.block6 table tbody td:first-child {
+    padding: 0 5px 0 0;
+}
+.named{
+	padding-left: 5px;
+}
+	.named, .named-descr, .block6 table tbody td{
+		font-size: 12px;
+		line-height: 14px;
+		vertical-align: middle;
+	}
+		.block6 table thead th{
+		line-height: 16px;
+		font-size: 14px;
+	}
 	.block__main .col-md-12{
 		background-image: none;
 	}
@@ -464,7 +482,12 @@
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
-
+	.wrapper-table{
+		overflow-x: scroll;
+	}
+.block6 table{
+	width: 450px;
+}
 	.block14__cart table tbody tr .remove{
 		margin: 0 auto;
 	}
@@ -642,7 +665,7 @@
 	.mobile__cart{
 		display: none;
 	}
-	
+
 }
 
 /* Medium Devices, Desktops */
