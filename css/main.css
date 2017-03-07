@@ -962,6 +962,7 @@ h2 {
   background-position: center center;
   background-size: cover;
   padding: 63px 0 62px;
+  display: none;
 }
 
 .owl-items {
