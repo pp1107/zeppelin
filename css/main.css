@@ -220,20 +220,6 @@ h2 {
   left: 39px;
 }
 
-.block1-img:before {
-  content: '';
-  left: 0;
-  right: 0;
-  bottom: 0;
-  top: 0;
-  max-width: 419px;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  background-color: #00888b;
-  opacity: .6;
-}
-
 .block1-img:after {
   content: '';
   left: 15px;
@@ -1185,7 +1171,6 @@ h2 {
 
 .block9 {
   padding: 40px 0 74px;
-  display: none;
 }
 
 .block9__table table thead tr th {

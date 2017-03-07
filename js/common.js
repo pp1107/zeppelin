@@ -30,9 +30,6 @@ $(document).ready(function() {
 		$('.block10__btn').click(function(){
 		$('.block11').toggle("slow");
 	});
-			$('.btn__map').click(function(){
-		$('.block9').toggle("slow");
-	});
 	$('.owl-carousel').owlCarousel({
 		loop:false,
 		nav:false,

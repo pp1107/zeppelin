@@ -209,17 +209,17 @@
 /* Small Devices, Tablets */
 @media only screen and (max-width : 767px) {
 	.block6 table tbody td:first-child {
-    padding: 0 5px 0 0;
-}
-.named{
-	padding-left: 5px;
-}
+		padding: 0 5px 0 0;
+	}
+	.named{
+		padding-left: 5px;
+	}
 	.named, .named-descr, .block6 table tbody td{
 		font-size: 12px;
 		line-height: 14px;
 		vertical-align: middle;
 	}
-		.block6 table thead th{
+	.block6 table thead th{
 		line-height: 16px;
 		font-size: 14px;
 	}
@@ -452,14 +452,14 @@
 		height: 55px;
 		font-size: 24px;
 	}
-		.block14__cart ul li:nth-child(3){
+	.block14__cart ul li:nth-child(3){
 		display: block;
 		margin: 15px auto 0;
 	}
 	.block14__cart ul li:nth-child(1){
 		margin-right: 20px !important;
 	}
-		.block14__cart ul li:nth-child(2){
+	.block14__cart ul li:nth-child(2){
 		margin: 0 !important;
 	}
 	.block14__cart ul{
@@ -468,16 +468,16 @@
 		left: 0;
 		right: 0;
 		height: auto;
-		    padding: 15px 15px !important;
+		padding: 15px 15px !important;
 	}
 	.block14__cart table tbody tr td:nth-child(2), .block14__cart table tbody tr td:nth-child(4) {
-    font-size: 12px;
-    text-align: center;
-}
-.block14__cart table thead tr th{
-	font-size: 16px;
-	text-align: center;
-}
+		font-size: 12px;
+		text-align: center;
+	}
+	.block14__cart table thead tr th{
+		font-size: 16px;
+		text-align: center;
+	}
 }
 
 /* Extra Small Devices, Phones */
@@ -485,9 +485,9 @@
 	.wrapper-table{
 		overflow-x: scroll;
 	}
-.block6 table{
-	width: 450px;
-}
+	.block6 table{
+		width: 450px;
+	}
 	.block14__cart table tbody tr .remove{
 		margin: 0 auto;
 	}
@@ -660,8 +660,8 @@
 /* Small Devices, Tablets */
 @media only screen and (min-width : 768px) {
 	.block__top__active nav {
-    margin: 17px 0 0 12px;
-}
+		margin: 17px 0 0 12px;
+	}
 	.block__top__active img{
 		margin: -22px 0 0;
 	}
