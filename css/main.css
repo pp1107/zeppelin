@@ -715,6 +715,9 @@ h2 {
   position: absolute;
   background-image: url("../img/arrow-down-blue.png");
   background-repeat: no-repeat;
+  -webkit-transform: rotate(-90deg);
+      -ms-transform: rotate(-90deg);
+          transform: rotate(-90deg);
 }
 
 .block6 table thead th {
@@ -927,7 +930,8 @@ h2 {
   left: 155px;
   margin: auto;
   width: 24px;
-  height: 13px;
+  height: 100%;
+  background-position: center center;
   display: block;
   background-image: url("../img/arrow-down.png");
   background-repeat: no-repeat;
@@ -1697,4 +1701,10 @@ h2 {
 
 .active-table .hidden-tr {
   display: none;
+}
+
+.active-table thead th:first-child:before {
+  -webkit-transform: rotate(0deg) !important;
+      -ms-transform: rotate(0deg) !important;
+          transform: rotate(0deg) !important;
 }

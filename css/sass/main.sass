@@ -539,7 +539,7 @@ h2
 					position: absolute
 					background-image: url("../img/arrow-down-blue.png")
 					background-repeat: no-repeat
-					
+					transform: rotate(-90deg)
 			th
 				color: #4e5356
 				font-family: "RobotoMedium"
@@ -700,7 +700,8 @@ h2
 		left: 155px
 		margin: auto
 		width: 24px
-		height: 13px
+		height: 100%
+		background-position: center center
 		display: block
 		background-image: url("../img/arrow-down.png")
 		background-repeat: no-repeat
@@ -1291,4 +1292,5 @@ h2
 		display: table-row
 	.hidden-tr
 		display: none
-		
+	thead th:first-child:before
+		transform: rotate(0deg) !important
