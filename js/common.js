@@ -148,4 +148,15 @@ $('.mobile-nav').toggle('slow');
         return +val+1;
     });
 });
+		$(".block6__add").click(function() {
+    $('.block__top__cart span').addClass('active').html(function(i, val) {
+        $.ajax({
+            url: '/path/to/script/',
+            type: 'POST',
+            data: {increment: true},
+            success: function() { alert('Request has returned') }
+        });
+        return +val+1;
+    });
+});
 }); 
