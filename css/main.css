@@ -1143,6 +1143,23 @@ h2 {
 
 .block8__item p:last-child {
   margin-bottom: 0;
+  position: relative;
+}
+
+.block8__item p:last-child:after {
+  content: '';
+  left: -23px;
+  right: 0;
+  top: -15px;
+  position: absolute;
+  height: 1px;
+  opacity: 0.1;
+  background-color: #fff;
+  display: block;
+}
+
+.block8__item3 p:last-child:after {
+  display: none;
 }
 
 .block8__item__title {
