@@ -29,6 +29,10 @@ a:hover, a:active, a:focus, input:hover, input:active, input:focus, button:hover
   margin: 0 0 0 -20px;
 }
 
+.block__top__logo img {
+  transition: all 0.3s ease;
+}
+
 .block__top {
   background-color: #00888b;
   height: 100px;
@@ -42,6 +46,7 @@ a:hover, a:active, a:focus, input:hover, input:active, input:focus, button:hover
 
 .block__top nav {
   margin: 31px 0 0 12px;
+  transition: all 0.3s ease;
 }
 
 .block__top nav ul {

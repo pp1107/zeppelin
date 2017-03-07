@@ -1,4 +1,17 @@
 $(document).ready(function() {
+	$(function() {
+    //caches a jQuery object containing the header element
+    var header = $(".block__top");
+    $(window).scroll(function() {
+        var scroll = $(window).scrollTop();
+
+        if (scroll >= 500) {
+            header.addClass("block__top__active");
+        } else {
+            header.removeClass("block__top__active");
+        }
+    });
+});
 	$('.toggle-td').click(function(){
 		$(this).parent().parent().parent().toggleClass('active-table');
 	});

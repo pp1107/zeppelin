@@ -659,6 +659,16 @@
 
 /* Small Devices, Tablets */
 @media only screen and (min-width : 768px) {
+	.block__top__active nav {
+    margin: 17px 0 0 12px;
+}
+	.block__top__active img{
+		margin: -22px 0 0;
+	}
+	.block__top__active{
+		height: 70px !important;
+		overflow: hidden;
+	}
 	.block__top nav ul li a:hover{
 		text-decoration: underline;
 		color: #FFF;
