@@ -5,14 +5,14 @@
 	<title>Zeppelin</title>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 	<link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css" />
 	<link rel="stylesheet" href="libs/owl/owl.carousel.css" />
 	<link rel="stylesheet" href="libs/animate/animate.min.css" />
 	<link rel="stylesheet" href="css/fonts.css" />
 	<link rel="stylesheet" href="css/main.css" />
 	<link rel="stylesheet" href="css/media.css" />
-	<script src="http://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+	<script defer src="https://use.fontawesome.com/d5259d4e90.js"></script>
+	<script defer src="http://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
 	<script>
 		ymaps.ready(init);
 
@@ -117,7 +117,8 @@
 				</div>
 			</div>
 		</div>
-		<ul class="mobile-nav hidden-sm hidden-md hidden-lg">
+		<div class="mobile-nav hidden-sm hidden-md hidden-lg">
+<ul>
 			<li>Меню</li>
 			<li><a href="#block1" class="page-scroll">Решение</a></li>
 			<li><a href="#block2" class="page-scroll">Схема работы</a></li>
@@ -125,6 +126,7 @@
 			<li><a href="#block4" class="page-scroll">Доставка</a></li>
 			<li><a href="#block5" class="page-scroll">Контакты</a></li>
 		</ul>
+		</div>
 		<div class="block__main">
 			<div class="container">
 				<div class="row">
@@ -139,11 +141,11 @@
 		</div>
 	</header>
 
-	<div class="block1" id="block1">
+	<div class="block1">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12">
-					<div class="h1">У нас есть решение!</div>
+					<div class="h1" id="block1">У нас есть решение!</div>
 				</div>
 			</div>
 			<div class="row">
@@ -160,11 +162,11 @@
 				<div class="col-md-12">
 					<div class="block1__step">
 						<ul>
-							<li><img src="img/block1-img-1.png" alt="Отбор проб"><span>Отбор <br> проб</span></li>
-							<li><img src="img/block1-img-2.png" alt="Экспертиза масел"><span>Экспертиза <br> масел</span></li>
-							<li><img src="img/block1-img-3.png" alt="Отчет (анализ отклонений)"><span>Отчет (анализ <br> отклонений)</span></li>
-							<li><img src="img/block1-img-4.png" alt="Устранение неполадок"><span>Устранение <br> неполадок</span></li>
-							<li><img src="img/block1-img-5.png" alt="Снижение расхадов"><span>Снижение <br> расхадов</span></li>
+							<li class="animated"><img src="img/block1-img-1.png" alt="Отбор проб"><span>Отбор <br> проб</span></li>
+							<li class="animated"><img src="img/block1-img-2.png" alt="Экспертиза масел"><span>Экспертиза <br> масел</span></li>
+							<li class="animated"><img src="img/block1-img-3.png" alt="Отчет (анализ отклонений)"><span>Отчет (анализ <br> отклонений)</span></li>
+							<li class="animated"><img src="img/block1-img-4.png" alt="Устранение неполадок"><span>Устранение <br> неполадок</span></li>
+							<li class="animated"><img src="img/block1-img-5.png" alt="Снижение расхадов"><span>Снижение <br> расхадов</span></li>
 						</ul>
 					</div>
 				</div>
@@ -190,7 +192,7 @@
 		</div>
 	</div>
 
-	<div class="block3">
+	<div class="block3 block3__js">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-8">
@@ -203,11 +205,11 @@
 		</div>
 	</div>
 
-	<div class="block4" id="block2">
+	<div class="block4">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12">
-					<div class="title">Схема работы</div>
+					<div class="title" id="block2">Схема работы</div>
 
 					<ul>
 						<li>Оставляете заявку.</li>
@@ -252,11 +254,11 @@
 		</div>
 	</div>
 
-	<div class="block6" id="block3">
+	<div class="block6">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12">
-					<div class="h1">Услуги</div>
+					<div class="h1" id="block3">Услуги</div>
 				</div>
 			</div>
 
@@ -266,8 +268,8 @@
 						<thead>
 							<tr>
 								<th class="toggle-td">Анализ масла</th>
-								<th>Стандартный анализ масла</th>
-								<th>Расширенный анализ антифриза</th>
+								<th>Стандартный <span>анализ масла</span></th>
+								<th>Расширенный <span>анализ антифриза</span></th>
 							</tr>
 						</thead>
 						<tbody>
@@ -330,8 +332,8 @@
 							</tr>
 							<tr class="options">
 								<td class="border-bottom border-none">Цена</td>
-								<td class="price">1 500 &#8381;</td>
-								<td class="price price-white">3 350 &#8381;</td>
+								<td class="price">1 500 <i class="fa fa-rub" aria-hidden="true"></i></td>
+								<td class="price price-white">3 350 <i class="fa fa-rub" aria-hidden="true"></i></td>
 							</tr>
 							<tr class="options">
 								<td class="border-bottom border-none">Количество</td>
@@ -358,8 +360,8 @@
 						<thead>
 							<tr>
 								<th class="toggle-td">Анализ масла</th>
-								<th>Стандартный анализ масла</th>
-								<th>Расширенный анализ антифриза</th>
+								<th>Стандартный <span>анализ масла</span></th>
+								<th>Расширенный <span>анализ антифриза</span></th>
 							</tr>
 						</thead>
 						<tbody>
@@ -429,8 +431,8 @@
 									</tr>
 									<tr class="options">
 										<td class="border-bottom border-none">Цена</td>
-										<td class="price">935 &#8381;</td>
-										<td class="price price-white">8 850 &#8381;</td>
+										<td class="price">935 <i class="fa fa-rub" aria-hidden="true"></i></td>
+										<td class="price price-white">8 850 <i class="fa fa-rub" aria-hidden="true"></i></td>
 									</tr>
 									<tr class="options">
 										<td class="border-bottom border-none">Количество</td>
@@ -472,7 +474,7 @@
 								<div class="owl-items">
 									<img src="img/owl-item-1.jpg" alt="Вакуумный насос для пробоотбора" class="img-responsive">
 									<div class="owl-item-title">Вакуумный насос для пробоотбора</div>
-									<div class="owl-item-price">3 000 &#8381;</div>
+									<div class="owl-item-price">3 000 <i class="fa fa-rub" aria-hidden="true"></i></div>
 									<div class="owl-item-count">
 										<input type="number" class="mod" min="1" value="1">
 									</div>
@@ -482,7 +484,7 @@
 								<div class="owl-items">
 									<img src="img/owl-item-2.jpg" alt="Пластиковая бутыль для проб 4 унции" class="img-responsive">
 									<div class="owl-item-title">Трубка для пробоотбора (d 6,35 мм), 1 бухта (100 футов)</div>
-									<div class="owl-item-price">500 &#8381;</div>
+									<div class="owl-item-price">500 <i class="fa fa-rub" aria-hidden="true"></i></div>
 									<div class="owl-item-count">
 										<input type="number" class="mod" min="1" value="1">
 									</div>
@@ -492,7 +494,7 @@
 								<div class="owl-items">
 									<img src="img/owl-item-3.jpg" alt="Набор для отбора проб через клапан" class="img-responsive">
 									<div class="owl-item-title">Пластиковая бутыль для проб 4 унции</div>
-									<div class="owl-item-price">50 &#8381;</div>
+									<div class="owl-item-price">50 <i class="fa fa-rub" aria-hidden="true"></i></div>
 									<div class="owl-item-count">
 										<input type="number" class="mod" min="1" value="1">
 									</div>
@@ -502,7 +504,7 @@
 								<div class="owl-items">
 									<img src="img/owl-item-4.jpg" alt="Набор для отбора проб через клапан" class="img-responsive">
 									<div class="owl-item-title">Набор для отбора проб через клапан</div>
-									<div class="owl-item-price">170 &#8381;</div>
+									<div class="owl-item-price">170 <i class="fa fa-rub" aria-hidden="true"></i></div>
 									<div class="owl-item-count">
 										<input type="number" class="mod" min="1" value="1">
 									</div>
@@ -515,12 +517,12 @@
 				</div>
 			</div>
 
-			<div class="block8" id="block4">
+			<div class="block8">
 				<div class="container">
 
 					<div class="row">
 						<div class="col-md-12">
-							<div class="h1 white">Доставка</div>
+							<div class="h1 white" id="block4">Доставка</div>
 						</div>
 					</div>
 
@@ -558,10 +560,10 @@
 								</div>
 							</div>
 							<div id="map">
-								<div class="container" id="block5">
+								<div class="container">
 									<div class="row">
 										<div class="col-md-12">
-											<a href="#block-f" onclick="return false" class="page-scroll btn__map">Показать список филиалов</a>
+											<a href="#block-f" onclick="return false" class="page-scroll btn__map" id="block5">Показать список филиалов</a>
 											<div class="clearfix"></div>
 										</div>
 									</div>
@@ -571,7 +573,7 @@
 								<div class="container">
 									<div class="row">
 										<div class="col-md-12">
-											<div class="block9__table" id="block-f">
+											<div class="block9__table">
 												<table>
 													<thead>
 														<tr>
@@ -579,7 +581,7 @@
 															<th></th>
 														</tr>
 													</thead>
-													<tbody>
+													<tbody id="block-f">
 														<tr>
 															<td>Центральный офис, Москва</td>
 															<td>143441, Московская область, Красногорский район, почтовое отделение 
@@ -640,13 +642,13 @@
 												<div class="container">
 													<div class="row">
 														<div class="col-md-12">
-															<a href="#" onclick="return false" class="block10__btn">Предоставление результатов анализа</a>
+															<a href="#scroll1" onclick="return false" class="page-scroll block10__btn">Предоставление результатов анализа</a>
 														</div>
 													</div>
 												</div>
 											</div>
 
-											<div class="block3 block11">
+											<div class="block3 block11" id="scroll1">
 												<div class="container">
 													<div class="row">
 														<div class="col-md-8">
@@ -733,12 +735,12 @@
 												</div>
 											</div>
 
-											<div class="block14" id="block6">
+											<div class="block14">
 												<div class="container">
 
 													<div class="row">
 														<div class="col-md-12">
-															<div class="h1">Корзина</div>
+															<div class="h1" id="block6">Корзина</div>
 														</div>
 													</div>
 
@@ -758,71 +760,80 @@
 																	<tbody>
 																		<tr>
 																			<td>Cell 1</td>
-																			<td>1 500 &#8381;</td>
+																			<td>1 500 <i class="fa fa-rub" aria-hidden="true"></i></td>
 																			<td>
 																				<div class="owl-item-count">
 																					<input type="number" class="mod" min="1" value="1">
 																				</div>
 																			</td>
-																			<td>1 500 &#8381;</td>
+																			<td>1 500 <i class="fa fa-rub" aria-hidden="true"></i></td>
 																			<td><span class="remove"></span></td>
 																		</tr>
 																		<tr>
 																			<td>Cell 4</td>
-																			<td>500 &#8381;</td>
+																			<td>500 <i class="fa fa-rub" aria-hidden="true"></i></td>
 																			<td>
 																				<div class="owl-item-count">
 																					<input type="number" class="mod" min="1" value="1">
 																				</div>
 																			</td>
-																			<td>2 500 &#8381;</td>
+																			<td>2 500 <i class="fa fa-rub" aria-hidden="true"></i></td>
 																			<td><span class="remove"></span></td>
 																		</tr>
 																		<tr>
 																			<td>Cell 7689697969 <br>
 																				66667786</td>
-																				<td>50 &#8381;</td>
+																				<td>50 <i class="fa fa-rub" aria-hidden="true"></i></td>
 																				<td>
 																					<div class="owl-item-count">
 																						<input type="number" class="mod" min="1" value="1">
 																					</div>
 																				</td>
-																				<td>1 100 &#8381;</td>
+																				<td>1 100 <i class="fa fa-rub" aria-hidden="true"></i></td>
 																				<td><span class="remove"></span></td>
 																			</tr>
 																		</tbody>
 																	</table>
 																	<ul>
 																		<li>Итого:</li>
-																		<li>4 600 &#8381;</li>
+																		<li>4 600 <i class="fa fa-rub" aria-hidden="true"></i></li>
 																		<li><a href="#" onclick="return false" class="btn-pereraschet">Перерасчет</a></li>
 																	</ul>
 																</div>
 																<div class="block14__form">
-																	<div class="col-sm-5">
-																		<label>
-																			Ф.И.О.*
-																			<input type="text" name="name">
-																		</label>
-																		<label>
-																			Контактный телефон*
-																			<input type="text" required>
-																		</label>
-																		<label>
-																			E-mail*
-																			<input type="text" required>
-																		</label>
-																		<div class="g-recaptcha" data-sitekey="6Ld-vRcUAAAAAPpb0JaJQoxK3RaUcJBIvz_slXzC"></div>
-																	</div>
-																	<div class="col-sm-7 padding-left">
-																		<label>
-																			Комментарий
-																			<textarea name="comments"></textarea>
-																		</label>
-																		<button>Заказать</button>
-																	</div>
-																	<div class="clearfix"></div>
-																	<p>Нажимая кнопку <strong>«Заказать»</strong> Вы отправляете свой заказ на обработку специалисту, который свяжется с Вами в ближайшее время для уточнения заказа.</p>
+																	<form id="form1">
+
+																		<!-- Hidden Required Fields -->
+																		<input type="hidden" name="project_name" value="S.O.S. Лаборатория">
+																		<input type="hidden" name="admin_email" value="admin@mail.com">
+																		<input type="hidden" name="form_subject" value="Заказ">
+																		<!-- END Hidden Required Fields -->
+
+																		<div class="col-sm-5">
+																			<label>
+																				Ф.И.О.*
+																				<input type="text" name="Ф.И.О.">
+																			</label>
+																			<label>
+																				Контактный телефон*
+																				<input type="text" name="Телефон" required>
+																			</label>
+																			<label>
+																				E-mail*
+																				<input type="text" name="E-mail" required>
+																			</label>
+																			<div class="g-recaptcha" data-sitekey="6Ld-vRcUAAAAAPpb0JaJQoxK3RaUcJBIvz_slXzC"></div>
+																		</div>
+																		<div class="col-sm-7 padding-left">
+																			<label>
+																				Комментарий
+																				<textarea name="Комментарий"></textarea>
+																			</label>
+																			<button>Заказать</button>
+																		</div>
+																		<div class="clearfix"></div>
+																		<p>Нажимая кнопку <strong>«Заказать»</strong> Вы отправляете свой заказ на обработку специалисту, который свяжется с Вами в ближайшее время для уточнения заказа.</p>
+																	</form>
 																</div>
 															</div>
 														</div>
@@ -830,7 +841,12 @@
 
 													</div>
 												</div>
-
+												<div class="block__thank_you">
+													<div class="mfp-close-thn"></div>
+													<img src="img/icon_done.png" alt="ALT">
+													<div class="title__popup">Ваш заказ успешно отправлен <br>
+														на обработку!</div>
+													</div>
 	<!--[if lt IE 9]>
 	<script src="libs/html5shiv/es5-shim.min.js"></script>
 	<script src="libs/html5shiv/html5shiv.min.js"></script>
@@ -838,13 +854,13 @@
 	<script src="libs/respond/respond.min.js"></script>
 	<![endif]-->
 	
-	<script src="libs/jquery/jquery-2.1.3.min.js"></script>
-	<script src="libs/bootstrap/js/bootstrap.min.js"></script>
-	<script src="libs/animate/animate-css.js"></script>
-	<script src="libs/waypoints/waypoints.min.js"></script>
-	<script src="libs/owl/owl.carousel.min.js"></script>
-	<script src="libs/scroll2id/PageScroll2id.min.js"></script>
-	<script src="js/common.js"></script>
+	<script defer src="libs/jquery/jquery-2.1.3.min.js"></script>
+	<script defer src="libs/bootstrap/js/bootstrap.min.js"></script>
+	<script defer src="libs/animate/animate-css.js"></script>
+	<script defer src="libs/waypoints/waypoints.min.js"></script>
+	<script defer src="libs/owl/owl.carousel.min.js"></script>
+	<script defer src="libs/scroll2id/PageScroll2id.min.js"></script>
+	<script defer src="js/common.js"></script>
 	<!-- Yandex.Metrika counter --><!-- /Yandex.Metrika counter -->
 	<!-- Google Analytics counter --><!-- /Google Analytics counter -->
 </body>

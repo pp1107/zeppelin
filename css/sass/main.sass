@@ -231,26 +231,31 @@ h2
 		li:nth-child(1)
 			left: 4px
 			top: 3px
+			animation-delay: 0.1s
 			&:after
 				content: '1'
 		li:nth-child(2)
 			top: 110px
 			left: -19px
+			animation-delay: 0.5s
 			&:after
 				content: '2'
 		li:nth-child(3)
 			top: 3px
 			left: -43px
+			animation-delay: 1s
 			&:after
 				content: '3'
 		li:nth-child(4)
 			top: 110px
 			left: -66px
+			animation-delay: 1.2s
 			&:after
 				content: '4'
 		li:nth-child(5)
 			left: -89px
 			top: 1px
+			animation-delay: 2s
 			&:after
 				content: '5'
 .h2
@@ -612,7 +617,7 @@ h2
 	line-height: 18px
 	display: inline-block
 	margin: 0 0 0 0px
-	padding: 0 0 0 20px
+	padding: 10px 0 10px 20px
 	width: 65%
 	text-align: left
 	vertical-align: top
@@ -687,7 +692,6 @@ h2
 	line-height: 29px
 	text-transform: uppercase
 	position: relative
-	border: 2px solid #e1e1e1
 	box-shadow: inset 0 0 10px rgba(178, 178, 178, 0.13)
 	background-image: url("../img/bg-detail.png")
 	cursor: pointer
@@ -717,12 +721,10 @@ h2
 	&:hover
 		background-image: url("../img/bg-detail2-h.png")
 .block7
-	background-image: url("../img/block7-bg.jpg")
-	background-repeat: no-repeat
+	background-image: url("../img/block14-bg.png")
 	background-position: center center
-	background-size: cover
 	padding: 63px 0 62px
-	
+	background-color: #f0f0f0
 	
 .owl-items
 	max-width: 260px
@@ -906,6 +908,7 @@ h2
 
 .block9
 	padding: 40px 0 74px
+	display: none
 .block9__table
 	table
 		thead
@@ -1083,11 +1086,10 @@ h2
 		display: block
 
 .block14
-	background-image: url("../img/block14-bg.jpg")
-	background-repeat: no-repeat
+	background-image: url("../img/block14-bg.png")
 	background-position: center center
-	background-size: cover
 	padding: 123px 0 120px
+	background-color: #f0f0f0
 	.h1
 		&:after
 			background-color: #5d686e
@@ -1296,3 +1298,43 @@ h2
 		display: none
 	thead th:first-child:before
 		transform: rotate(0deg) !important
+
+
+.mfp-close-thn
+	position: absolute
+	cursor: pointer
+	width: 25px
+	height: 25px
+	font-size: 0
+	background-image: url("../img/close.png") !important
+	background-repeat: no-repeat
+	top: 20px
+	right: 20px
+	opacity: 1 !important
+.block__thank_you_active
+	display: block !important
+.block__thank_you
+	max-width: 550px
+	width: 100%
+	height: 300px
+	background-color: #fff
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.3)
+	position: fixed
+	top: 0
+	bottom: 0
+	left: 0
+	right: 0
+	width: 100%
+	margin: auto
+	z-index: 9999
+	display: none
+	img
+		display: block
+		margin: 40px auto
+	.title__popup
+		text-align: center
+		color: #4e5356
+		font-size: 25px
+		font-weight: 400
+		line-height: 32px
+		

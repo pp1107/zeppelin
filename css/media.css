@@ -2,6 +2,9 @@
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px) {
+	.block__main h2 {
+    margin: 90px 0 0 60px;
+}
 	.block__top nav ul li {
 		margin: 0 35px 0 0;
 	}
@@ -73,7 +76,7 @@
 		left: -50px;
 		top: -130px;
 	}
-	.block4 ul li:nth-child(3){
+	.block4 ul li:nth-child(4){
 		left: -45px;
 		top: -125px;
 	}
@@ -102,6 +105,10 @@
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
+
+	.block6 table thead th:last-child span, .block6 table thead th:nth-child(2) span{
+		display: none !important;
+	}
 	.block6 table thead th{
 		line-height: 21px;
 	}
@@ -208,6 +215,9 @@
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 767px) {
+	.mobile-nav li a.active{
+		font-family: 'RobotoBold';
+	}
 	.block6 table tbody td:first-child {
 		padding: 0 5px 0 0;
 	}
@@ -244,7 +254,7 @@
 		overflow: hidden;
 	}
 	.block__top__logo img {
-		max-width: 85%;
+		max-width: 95%;
 		margin: -12px 0 0 -15px;
 	}
 	.block__main {
@@ -286,9 +296,14 @@
 		z-index: 3;
 		top: 90px;
 		width: 100%;
+		height: 100%;
+		overflow-y: scroll;
 		background-color: #fff;
 		box-shadow: 0 1px 30px rgba(0, 0, 0, 0.2);
 		display: none;
+	}
+	.mobile-nav ul{
+		height: 560px;
 	}
 	.mobile-nav li:first-child{
 		background-color: #00a3a6;
@@ -303,6 +318,7 @@
 	}
 	.mobile-nav li{
 		padding: 0 10px;
+		height: 78px;
 	}
 	.mobile-nav li a{
 		color: #4e5356;
@@ -482,11 +498,66 @@
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
+.block14__cart table tbody tr td:nth-child(1){
+	    text-align: center;
+    padding: 10px 15px !important;
+}
+.block14__cart table tbody tr td:nth-child(2){
+display: inline-block !important;
+    max-width: 60px;
+}
+.block14__cart table tbody tr td:nth-child(3){
+display: inline-block !important;
+    max-width: 115px;
+}
+
+.block14__cart table tbody tr td:nth-child(4){
+display: inline-block !important;
+    max-width: 60px;
+}
+.block14__cart table tbody tr td:nth-child(5){
+display: inline-block !important;
+    max-width: 20px;
+}
+.block14__cart table thead tr th:first-child{
+	display: none;
+}
+.block14__cart table thead tr th{
+	width: 34% !important;
+	padding: 0 !important;
+}
+
 	.wrapper-table{
-		overflow-x: scroll;
+		overflow-x: visible;
 	}
-	.block6 table{
-		width: 450px;
+	.block6__add{
+		font-size: 16px;
+	}
+	.options .owl-item-count input{
+		width: 98px;
+	}
+	.block6 table thead th:first-child:before{
+		left: 2px;
+	}
+	.block6 table thead th:first-child {
+		text-align: center;
+		padding: 0 0 0 20px;
+	}
+	.named, .named-descr{
+		display: block !important;
+		width: 100% !important;
+		text-align: center !important;
+		padding: 5px 0 !important;
+	}
+	.block6 table thead th:last-child, .block6 table thead th:nth-child(2){
+		width: 30%;
+	}
+	.block6 table {
+		width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+		position: relative;
+		left: 0px;
 	}
 	.block14__cart table tbody tr .remove{
 		margin: 0 auto;
@@ -515,6 +586,7 @@
 		display: block !important;
 		width: 290px;
 		text-align: center;
+		margin: 0 auto 0;
 	}
 	.block13 p{
 		font-size: 18px;
@@ -636,15 +708,64 @@
 }
 @media only screen and (max-width : 400px) {
 	.mobile__cart {
-		right: 5px;
+		right: -5px;
 	}
+	.owl-prev {
+    left: -10px;
+    width: 20px;
+    height: 40px;
+    background-size: contain;
+}
+	.owl-next {
+    right: -10px;
+    width: 20px;
+    height: 40px;
+    background-size: contain;
+}
 }
 /* Custom, iPhone Retina */
-@media only screen and (max-width : 320px) {
-
+@media only screen and (max-width : 350px) {
+	.named, .named-descr, .block6 table tbody td{
+		font-size: 11px;
+	}
+		.block6 table thead th:last-child, .block6 table thead th:nth-child(2){
+		width: 22%;
+	}
+	.block6 table {
+		width: 340px;
+		margin-left: auto;
+		margin-right: auto;
+		position: relative;
+		left: -10px;
+	}
 }
-
-
+@media only screen and (max-width : 340px) {
+	.block6 table {
+		width: 330px;
+		margin-left: auto;
+		margin-right: auto;
+		position: relative;
+		left: -10px;
+	}
+}
+@media only screen and (max-width : 330px) {
+	.block6 table {
+		width: 320px;
+		margin-left: auto;
+		margin-right: auto;
+		position: relative;
+		left: -10px;
+	}
+}
+@media only screen and (max-width : 325px) {
+	.block6 table {
+		width: 320px;
+		margin-left: auto;
+		margin-right: auto;
+		position: relative;
+		left: -15px;
+	}
+}
 /*==========  Mobile First Method  ==========*/
 
 /* Custom, iPhone Retina */
